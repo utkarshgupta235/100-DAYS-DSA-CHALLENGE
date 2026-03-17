@@ -1,18 +1,22 @@
 #include<stdio.h>
-
+#include<conio.h>
 int main(){
 
-  int n;
-  printf("Enter a number : ");
-  scanf("%d",&n);
-// value of n gives user control to us 
+  int a,b;
 
-// for(int i = 1; i <=n; i++) jo bhi n ki value user input karega utni baar loop chalega
+printf("enter number1\n");
+scanf("%d",&a);
 
-  for (int i = 1; i <=n; i=i+2) 
-  {
-    printf("HELLO UPES\n");
-  }
-  
-return 0;
+printf("enter number2\n");
+scanf("%d",&b);
+
+printf("sum of two no.s: number1 + number2 is %d\n",a+b);
+
+printf("multiplication of two no.s: number1 * number2 is %d\n",a*b);
+
+printf("difference  of two no.s: number1 - number2 is %d\n",a-b);
+
 }
+
+
+
