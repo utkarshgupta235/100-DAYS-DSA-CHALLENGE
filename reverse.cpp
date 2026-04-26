@@ -1,20 +1,21 @@
 #include<iostream>
 using namespace std ;
-void print(int a[],int n){
-  for (int i = 0; i < n; i++)
+void printarr(int arr[] , int size ){
+  for (int i = 0; i < size ; i++)
   {
-   cout<<a[i]<<" ";
+   cout<<arr[i]<<" ";
   }
+  
 }
 int main(){
-int reverse[6]={10,15,20,25,30,35};
-for (int i = 0; i < 6/2; i++)
+int arr1[6]= {11,22,33,44,55,66} ;
+int size = 6 ;
+for ( int i = 0; i < size/2 ; i++)
 {
-  int temp = reverse[i];
-  reverse[i]=reverse[6-1-i];
-  reverse[6-1-i]=temp;
+int temp = arr1[i] ;
+arr1[i]=arr1[size-1-i] ;
+arr1[size-1-i] = temp ;
 }
-print(reverse,6);
-
+printarr(arr1,size);
   return 0 ;
 }
